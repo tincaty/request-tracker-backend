@@ -5,7 +5,7 @@ Backend API for the Feature Request Tracker web application using Node.js, Expre
 
 This repository contains the backend API for the Feature Request Tracker application. It provides endpoints to manage feature requests including creating, updating, deleting, and filtering by status.
 
-## ⚙️ Technology Stack
+## Technology Stack
 
 -     Node.js    - JavaScript runtime
 -     Express.js    - Web framework for building RESTful APIs
@@ -13,7 +13,7 @@ This repository contains the backend API for the Feature Request Tracker applica
 -     dotenv    - For environment variable management
 -     nodemon    (dev) - Auto-restarting server during development
 
-## 🧩 Features / Endpoints
+##  Features / Endpoints
 
 - `GET /features` - Retrieve all feature requests
 - `GET /features/:id` - Retrieve a single feature request by ID
@@ -30,14 +30,14 @@ Each feature request includes:
 - `status` (Open / In Progress / Completed)
 - `created_at` (datetime)
 
-## 🚀 Setup Instructions
+##  Setup Instructions
 
 1. Clone the repository:
 
 ```bash
 git clone <repo-url>
 cd feature-request-tracker-backend
-    2. Install dependencies:
+    2. Install dependencies: include express ,dotenv ,mysql2 and cors
 npm install
     3. Create a .env file with your database configuration:
 DB_HOST=localhost
@@ -48,7 +48,6 @@ T_NAME=request_tracker
 PORT=9000
     4. Import the database schema (database.sql) to MySQL.
     5. Start the backend server:
-
-npx nodemon server.js
+    npx nodemon server.js
 The API will run on http://localhost:9000.
 
